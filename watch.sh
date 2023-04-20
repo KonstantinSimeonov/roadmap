@@ -4,7 +4,7 @@ inotifywait \
     --event modify,move,create,delete *.dot |  \
     while read f; do
         echo "CHANGED %f"
-        dot -Tsvg roadmap.dot > roadmap.svg
+        dot -Tsvg "%f" > roadmap.svg
         echo "Built svg"
     done &
 
