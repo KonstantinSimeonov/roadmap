@@ -1,0 +1,12 @@
+digraph {
+    node [shape=box style=filled]
+    "AWS" -> "S3"
+    "S3" -> "gzip prod client assets"
+    "AWS" -> "Fargate"
+    "JS" -> "JS Tooling"
+    "JS Tooling" -> "Vite"
+    "Vite" -> "vite-plugin-compression (gzip)"
+    "vite-plugin-compression (gzip)" [href="http://github.com/vbenjs/vite-plugin-compression"]
+    "gzip prod client assets" -> "vite-plugin-compression (gzip)"
+    "Vite" -> "Experiment with creating vite plugin"
+}
