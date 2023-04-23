@@ -8,5 +8,5 @@ digraph {
     "Vite" -> "vite-plugin-compression (gzip)"
     "vite-plugin-compression (gzip)" [href="http://github.com/vbenjs/vite-plugin-compression"]
     "gzip prod client assets" -> "vite-plugin-compression (gzip)"
-    "Vite" -> "Experiment with creating vite plugin"
+    "Vite" -> "Experiment with creating vite plugin", "Rollup code splitting", "Dynamic imports"
 }
