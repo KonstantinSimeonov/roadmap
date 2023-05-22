@@ -9,6 +9,9 @@ digraph {
     "vite-plugin-compression (gzip)" [href="http://github.com/vbenjs/vite-plugin-compression"]
     "gzip prod client assets" -> "vite-plugin-compression (gzip)"
     "Vite" -> "Experiment with creating vite plugin", "Rollup code splitting", "Dynamic imports"
-    "Turborepo" -> "Task definition", "Cache"
+    "Rollup code splitting" -> "rollup has better performance when the individual chunks aren't too big"
+    "Turborepo" -> "Task definition", "Cache", "Linting turboconfig"
     "Typescript" -> "--increment", "incremental builds in CI"
+    "incremental builds in CI" -> "caching tsbuildinfo is tricky,\nparallel build/typechecking is a simpler option"
+    "Blog" -> "OOP is a meme", "Don't throw exceptions"
 }
